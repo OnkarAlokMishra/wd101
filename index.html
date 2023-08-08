@@ -1,36 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Registration Form</title>
-  </head>
-  <body>
-    <div id="forrm">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
     <form id="registration-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <br>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <br>
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-      <br>
-
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required>
-      <br>
-
-      <label for="terms">I accept the terms and conditions</label>
-      <input type="checkbox" id="terms" name="terms" required>
-      <br>
-
-      <input type="submit" value="Submit">
+      <!-- Your form fields here -->
+      <button class="submit-btn" type="submit">Submit</button>
     </form>
-    </div>
-    <div id="forrm1">
-    <table border=10 id="registration-table">
+    <table id="registration-table">
       <thead>
         <tr>
           <th>Name</th>
@@ -42,27 +25,7 @@
       </thead>
       <tbody></tbody>
     </table>
-    </div>
-    <script type="text/javascript" src="index.js"></script>
-    <style type="text/css">
-      body{
-        background: darkcyan;
-        min-height: 100vh;
-        width: 100%;
-      }
-      #forrm{
-        align-content: center;
-        justify-content: center;
-        display: flex;
-        border: 2px solid rgba(255, 255, 255, 1.0);
-        border-radius: 20px;
-        
-      }
-      #forrm1{
-        align-content: center;
-        justify-content: center;
-        display: flex;
-      }
-    </style>
-  </body>
+  </div>
+  <script src="index.js"></script>
+</body>
 </html>
